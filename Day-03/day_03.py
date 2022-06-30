@@ -9,8 +9,7 @@ for line in input:
     for index, bit in enumerate(line):
         if bit == '1':
             counts[index] += 1
-
-
+            
 gamma_rate = []
 epsilon = []
 

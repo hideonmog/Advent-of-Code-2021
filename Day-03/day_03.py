@@ -10,18 +10,15 @@ for line in input:
         if bit == '1':
             counts[index] += 1
             
-gamma_rate = []
-epsilon = []
+gamma_rate = 0
+epsilon = 0
 
 for i in range(len(input[0])):
+    gamma_rate <<= 1
+    epsilon <<= 1
     if counts[i] > len(input)/2:
-        gamma_rate.append('1')
-        epsilon.append('0')
+        gamma_rate += 1
     else:
-        gamma_rate.append('0')
-        epsilon.append('1')
-
-gamma_rate = int(''.join(gamma_rate), 2)
-epsilon = int(''.join(epsilon), 2)
+        epsilon += 1
 
 print(f'The power consumption of the submarine is: {gamma_rate*epsilon}')

@@ -1,6 +1,3 @@
-from unittest.mock import NonCallableMagicMock
-
-
 with open('input.txt', 'r') as f:
     input = f.read().splitlines()
 

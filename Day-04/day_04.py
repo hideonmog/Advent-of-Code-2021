@@ -1,3 +1,6 @@
+from turtle import left
+
+
 with open('input.txt', 'r') as f:
     nums, *boards = f.read().strip().split('\n\n')
 
@@ -52,3 +55,28 @@ def part1():
                 return sum(board) * num
 
 print(f'The solution to part 1 is: {part1()}')
+
+# part2: find the last board that wins and calculate the score
+
+def part2():
+    boards2 = boards.copy()
+    nums2 = nums.copy()
+
+    last = False
+    while not last:
+        for num in nums2:
+            for board in boards2:
+                mark(num, board)
+
+            index = 0
+            while index < len(boards2):
+                if detect_win(boards2[index]):
+                    if len(boards2) != 1:
+                        boards2.pop(index)
+                    else: 
+                        last = True
+                        return sum(boards2[index]) * num
+                else:
+                    index += 1
+    
+print(f'The solution to part 2 is: {part2()}')

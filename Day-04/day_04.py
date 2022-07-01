@@ -1,6 +1,3 @@
-from turtle import left
-
-
 with open('input.txt', 'r') as f:
     nums, *boards = f.read().strip().split('\n\n')
 
@@ -57,7 +54,6 @@ def part1():
 print(f'The solution to part 1 is: {part1()}')
 
 # part2: find the last board that wins and calculate the score
-
 def part2():
     boards2 = boards.copy()
     nums2 = nums.copy()

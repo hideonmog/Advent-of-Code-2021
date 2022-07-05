@@ -70,7 +70,6 @@ def part2():
         number = int(''.join(number))
         totalCount += number
 
-    return totalCount
+    print(f'The solution to part 2 is: {totalCount}')
 
-
-print(f'The solution to part 2 is: {part2()}')
+part2()

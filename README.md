@@ -2,7 +2,7 @@
 
 This is a repository containing my solutions to the [Advent of Code 2021](https://adventofcode.com/2021) puzzles and logs my progression in problem solving using Python.
 
-### Quick links to the solutions for ech day
+### Links to the solutions for each day
 
 - [Day 1](https://github.com/hideonmog/Advent-of-Code-2021/blob/main/Day-01/day_01.py)
 - [Day 2](https://github.com/hideonmog/Advent-of-Code-2021/blob/main/Day-02/day_02.py)
